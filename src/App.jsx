@@ -17,6 +17,7 @@ const Users = React.lazy(() => import("./pages/Users"));
 import Products from "./pages/Products";
 const ProductDetail = React.lazy(() => import("./pages/ProductDetail"));
 
+const Notes = React.lazy(() => import("./pages/Notes"));
 function App() {
   return(
     <Suspense fallback={<Loading />}>
@@ -31,6 +32,7 @@ function App() {
 
                   <Route path="products" element={<Products />} />
                   <Route path="/products/:id" element={<ProductDetail />} /> 
+                  <Route path="/Notes" element={<Notes />} />
 
                 </Route>
 

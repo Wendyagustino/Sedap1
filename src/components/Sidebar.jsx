@@ -69,6 +69,11 @@ export default function Sidebar() {
                                 Products
                         </NavLink>
                     </li>
+                    <li>
+	                    <NavLink id="menu-4" to="/Notes" className={menuClass}>
+                        <AiOutlineUser />
+                        Notes</NavLink>
+	                </li>
                 </ul>
             </div>
 
